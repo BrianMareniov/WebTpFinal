@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <title>Web Ventas productos deportivos</title>
+  <!-- Link de la librería bootstrap local -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Css personalizado -->
+  <link rel="stylesheet" href="interfaz.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark tamaño-letra-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="tamaño-btn-inicio" src="img/pesa.png" alt="pesa-icono"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link texto-blanco-custom" aria-current="page" href="index.html">Inicio</a>
+          <a class="nav-link texto-blanco-custom" href="Views/nosotros.html">Nosotros</a>
+          <a class="nav-link texto-blanco-custom" href="Views/tienda.html">Tienda</a>
+          <a class="nav-link texto-blanco-custom" href="Views/contacto.html">Contacto</a>
+          <a class="nav-link texto-blanco-custom" href="Views/información.html">Información</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active transicion-carousel-personalizada" data-bs-interval="10000">
+        <img src="img/basquet2.jpg" class="d-block w-100" alt="img-basquet">
+        <div class="carousel-caption d-md-block text-white">
+          <h4>Artículos deportivos</h4>
+          <p>Tenemos de todo tipo para el deporte que necesites</p>
+        </div>
+      </div>
+      <div class="carousel-item transicion-carousel-personalizada" data-bs-interval="2000">
+        <img src="img/crossfit2.jpg" class="d-block w-100 text-white" alt="img-box">
+        <div class="carousel-caption d-md-block text-white">
+          <h4>Envíos</h4>
+          <p>Realizamos envíos al interior de todo el país</p>
+        </div>
+      </div>
+      <div class="carousel-item transicion-carousel-personalizada">
+        <img src="img/running.jpg" class="d-block w-100" alt="img-running">
+        <div class="carousel-caption d-md-block text-white">
+          <h4>¿Tienes alguna duda?</h4>
+          <p>Contáctanos a nuestro número whatsapp o visita nuestras redes</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <footer class="footer bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Correo electrónico: FitLife@gmail.com</p>
+          <p>Teléfono: +3493 520736</p>
+          <p>Dirección: Lainez 630 , Sunchales</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Seguinos en nuestras redes</h5>
+          <ul class="list-unstyled">
+            <li><a class="a-redes" href="#">Facebook</a></li>
+            <li><a class="a-redes" href="#">Twitter</a></li>
+            <li><a class="a-redes" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 Brian Mareniov Company. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p><a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
